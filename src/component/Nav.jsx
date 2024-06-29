@@ -24,7 +24,7 @@ const Nav = () => {
           <li className="cursor-pointer hover:text-blue-500">Privacy Policy</li>
           <li className="cursor-pointer hover:text-blue-500">Contact</li>
         </ul>
-        <button onClick={handleToggle} className="hidden pl-20 mt-8 max-sm:flex">    { Nav ? < FaOutdent/> : <IoMdClose/>} </button>
+        <button onClick={handleToggle} className="hidden pl-20 mt-5 max-sm:flex">    { Nav ? < FaOutdent/> : <IoMdClose/>} </button>
       </nav>
       <div className={`${ !Nav ? "top-[0%]" : "h-[250px]"  } md:hidden transition-all duration-1000 absolute top-[-100%] list-none flex gap-2 items-center justify-center flex-col bg-slate-400 text-white w-44 h-60 rounded-r-2xl mt-16`}   >
         <li className="cursor-pointer hover:text-blue-500">Home</li>
